@@ -1,5 +1,5 @@
 package GraphicalEditor.EmojiFaces;
 
-public class EmojiFactory {
-
+public interface EmojiFactory {
+    public EmojiFace newFace();
 }

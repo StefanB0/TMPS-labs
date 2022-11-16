@@ -1,4 +1,12 @@
 package GraphicalEditor.AdvancedShapes;
 
-public class Shape3DBuilder {
+public interface Shape3DBuilder {
+    public void reset();
+
+    public void setCoordinates();
+    public void setVolume();
+    public void setMesh();
+    public void setTexture();
+
+    public Shape3D getResult();
 }

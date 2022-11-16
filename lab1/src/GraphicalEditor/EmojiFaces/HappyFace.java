@@ -1,4 +1,22 @@
 package GraphicalEditor.EmojiFaces;
 
-public class HappyFace extends EmojiFace {
+import GraphicalEditor.Shape;
+
+public class HappyFace implements Shape {
+    private String happy;
+    public HappyFace() {
+        this.happy = ":)";
+    }
+
+    @Override
+    public Shape clone() {
+        HappyFace hp = new HappyFace();
+        hp.happy = this.happy;
+        return hp;
+    }
+
+    @Override
+    public String render() {
+        return this.happy;
+    }
 }
