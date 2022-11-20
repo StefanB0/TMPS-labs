@@ -1,16 +1,10 @@
 package GraphicalEditor.BasicShapes;
 
+import GraphicalEditor.Shape;
+
 public interface AbstractShapeFactory {
-
-}
-class DefaultShapeFactory implements AbstractShapeFactory{
-
-}
-
-class DottedShapeFactory implements AbstractShapeFactory {
-
+    public Shape newCircle();
+    public Shape newSquare();
+    public Shape newTriangle();
 }
 
-class FilledShapeFactory implements AbstractShapeFactory{
-    DottedCircle dc;
-}

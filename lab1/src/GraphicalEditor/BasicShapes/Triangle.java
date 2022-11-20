@@ -5,14 +5,27 @@ import GraphicalEditor.Shape;
 public class Triangle implements Shape {
     @Override
     public Shape clone() {
-        return null;
+        return this;
+    }
+
+    @Override
+    public String render() {
+        return "△";
     }
 }
 
-class DottedTriangle extends Triangle {
-
+class SmallTriangle extends Triangle {
+    @Override
+    public String render() {
+        return "▵";
+    }
 }
 
 class FilledTriangle extends Triangle {
-
+    @Override
+    public String render() {
+        return "▲";
+    }
 }
+
+//  ▲   △   ▵

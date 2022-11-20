@@ -3,10 +3,10 @@ package GraphicalEditor.AdvancedShapes;
 public interface Shape3DBuilder {
     public void reset();
 
-    public void setCoordinates();
-    public void setVolume();
-    public void setMesh();
-    public void setTexture();
+    public void setCoordinates(int x, int y);
+    public void setSize(int size);
+
+    public void setTexture(String texture);
 
     public Shape3D getResult();
 }

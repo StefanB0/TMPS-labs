@@ -2,7 +2,7 @@ package GraphicalEditor.EmojiFaces;
 
 import GraphicalEditor.Shape;
 
-public class SadFace implements Shape {
+public class SadFace implements EmojiFace {
     private String sad;
     SadFace(){
         this.sad = ";(";

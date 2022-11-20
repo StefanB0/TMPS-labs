@@ -21,9 +21,12 @@ public class Renderer {
     }
 
     public int draw() {
+        String output = "Draw: ";
         for(Shape s: this.memory) {
-            System.out.print(s.render() + " ");
+            output += s.render() + ", ";
         }
+        output = output.substring(0, output.length()-2);
+        System.out.println(output);
         return 0;
     }
 }

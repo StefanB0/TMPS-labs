@@ -5,14 +5,27 @@ import GraphicalEditor.Shape;
 public class Circle implements Shape {
     @Override
     public Shape clone() {
-        return null;
+        return this;
+    }
+
+    @Override
+    public String render() {
+        return "○";
     }
 }
 
 class DottedCircle extends Circle {
-
+    @Override
+    public String render() {
+        return "◌";
+    }
 }
 
 class FilledCircle extends Circle {
-
+    @Override
+    public String render() {
+        return "●";
+    }
 }
+
+//  ○   ●   ◌
