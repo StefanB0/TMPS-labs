@@ -1,9 +1,15 @@
 package Bank.Bridge;
 
+import Bank.Proxy.BankInterface;
+
 public class AgroBankAccount implements BankAccount {
 
-    public String accountId;
     private float balance;
+    private BankInterface bank;
+
+    public AgroBankAccount(BankInterface bank) {
+        this.bank = bank;
+    }
     @Override
     public float getBalance() {
         return this.balance;
