@@ -7,11 +7,9 @@ import Bank.Decorator.ColoredPrinter;
 import Bank.Decorator.PlainPrinter;
 import Bank.Proxy.AgroBank;
 import Bank.Proxy.BankProxy;
-import Bank.Server.Client.ATM;
 import Bank.Composite.Hotel;
 import Bank.Composite.Tourist;
 import Bank.Composite.TouristGroup;
-import Bank.Server.BankNetwork;
 
 public class Main {
     public static void main(String[] args) {
