@@ -1,4 +1,4 @@
-package Bank.Client;
+package Bank.Server.Client;
 
 import Bank.Server.BankNetwork;
 

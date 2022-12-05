@@ -1,4 +1,4 @@
-package Bank.Client;
+package Bank.Server.Client;
 
 public class Converter {
     public int countMoney(String cash) {

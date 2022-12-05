@@ -13,7 +13,7 @@ public class AgroBankAccount implements BankAccount {
     public void transfer(float amount, String target) {
         this.balance -= amount;
         // Send to target via Proxy
-        if (target == "Agro-Store")
+        if (target == "AgroShop")
             this.balance += amount * 0.05;
     }
 
